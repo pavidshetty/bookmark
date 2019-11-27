@@ -1,7 +1,11 @@
 require './lib/bookmark'
 
-describe Bookmark do
-    it 'returns all bookmarks' do
-      expect(Bookmark.all).to eq ["http://www.makersacademy.com", "http://www.destroyallsoftware.com", "http://www.google.com"]
+   describe '.all' do
+     it 'returns a list of bookmarks' do
+      bookmarks = Bookmark.all
+
+      expect(bookmarks).to include "http://www.makersacademy.com"
+      expect(bookmarks).to include "http://www.destroyallsoftware.com"
+      expect(bookmarks).to include "http://www.google.com"
+     end
    end
-end
