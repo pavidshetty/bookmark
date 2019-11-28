@@ -13,8 +13,20 @@ So that I can save a website
 I would like to add the site's address and title to bookmark manager
 ```
 
-CONNECT TO SQL :
+CONNECT TO SQL :created bookmark_manager database
 Connect to psql
 Create the database using the psql command CREATE DATABASE bookmark_manager;
 Connect to the database using the pqsl command \c bookmark_manager;
 Run the query we have saved in the file 01_create_bookmarks_table.sql
+
+CONNECT TO SQL :created bookmark_manager_test database
+Connect to psql
+Create the database using the psql command CREATE DATABASE bookmark_manager_test;
+Connect to the database using the pqsl command \c bookmark_manager;
+Run the query we have saved in the file 01_create_bookmarks_table.sql to create table
+
+```
+As a user
+So I can store bookmark data for later retrieval
+I want to add a bookmark to Bookmark Manager
+```
